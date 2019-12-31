@@ -33,10 +33,12 @@ inquirer
 
         //   using axios to retrieve info from github API
         axios.get(queryUrl).then(function (res) {
-            const githubData = res.data;
+            githubData = res.data;
+
         }).then(function (res) {
             axios.get(starsQueryUrl).then(function (res) {
                 const stars = res.data.length;
+
                 // this logs the number showing up on page1...not sure how to get the TOTAL number of stars a user has
 
 
