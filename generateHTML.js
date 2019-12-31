@@ -152,6 +152,7 @@ function generateHTML(githubData, stars, color) {
            background-color: ${colors[color].headerBackground};
            color: ${colors[color].headerColor};
            margin: 20px;
+           text-align: center;
          }
          
          .col {
@@ -173,52 +174,55 @@ function generateHTML(githubData, stars, color) {
       </style>
       <body>
       <div class="wrapper">
-         <div class="container">
+        <div class="container">
          <div class="photo-header">
           <img src="${githubData.avatar_url}" alt="profile-pic">
           <h1>Hi!</h1>
           <h2>My name is ${githubData.name}!</h2>
-          <h3>Currently @ ${githubData.name}</h3>
+          <br>
+          <h2>Currently @ ${githubData.company}</h2>
             <div class="links-nav">
-            <span class="nav-link"><a href="https://www.google.com/maps/place/${githubData.location}>${githubData.location}</a></span>
-            <span class ="nav-link"><a href="${githubData.html_url}">GitHub</a></span>
-            <span class ="nav-link"><a href="${githubData.blog}">Blog</a></span>
+            <span class="nav-link"><a href="https://www.google.com/maps/place/${githubData.location}"><i class="fas fa-location-arrow"></i> ${githubData.location}</a></span>
+            <span class ="nav-link"><a href="${githubData.html_url}"><i class="fab fa-github"></i> GitHub</a></span>
+            <span class ="nav-link"><a href="${githubData.blog}"><i class="fas fa-rss"></i> Blog</a></span>
          </div>
-      
-      
+         </div>
+      <div class="container">
+      <main>
       <div class="row">
-        <div class="col-sm-12">
-         <h1>${githubData.bio}</h1>
+        <div class="col">
+         <h3>${githubData.bio}</h3>
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-6">
+          <div class="col">
              <div class="card">
-               <h2>Public Repositories</h2>
+               <h3>Public Repositories</h3>
                 <h5>${githubData.public_repos}</h5>
              </div>
 
              <div class="card">
-              <h2>Followers</h2>
+              <h3>Followers</h3>
                 <h5>${githubData.followers}</h5>
              </div>
 
           </div>
-        </div>
+        
 
-        <div class="row">  
-          <div class="col-sm-6">
+            <div class="col">
             <div class="card">
-              <h2>GitHub Stars</h2>
+              <h3>GitHub Stars</h3>
                <h5>${stars}</h5>
             </div>
             <div class="card">
-              <h2>Following</h2>
+              <h3>Following</h3>
                 <h5>${githubData.following}</h5>
+            </div> 
             </div>
+          </main>
           </div>
         </div>
-      </div>                
+                      
       </div>
       </body>
       </html>`

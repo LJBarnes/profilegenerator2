@@ -53,7 +53,7 @@ inquirer
 
                     // creates PDF file
                     const html = fs.readFileSync('./first.html', 'utf8');
-                    const options = { format: 'Letter' };
+                    const options = {"format": "letter"};
 
                     pdf.create(html, options).toFile('.devprofile.pdf', function (err, res) {
                         if (err) return console.log(err);

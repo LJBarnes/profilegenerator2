@@ -24,7 +24,7 @@
          height: 100%;
          }
          .wrapper {
-         background-color: #E6E1C3;
+         background-color: #879CDF;
          padding-top: 100px;
          }
          body {
@@ -66,8 +66,8 @@
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
-         background-color: #C1C72C;
-         color: black;
+         background-color: #FF8374;
+         color: white;
          padding: 10px;
          width: 95%;
          border-radius: 6px;
@@ -78,7 +78,7 @@
          border-radius: 50%;
          object-fit: cover;
          margin-top: -75px;
-         border: 6px solid #black;
+         border: 6px solid #FEE24C;
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
          .photo-header h1, .photo-header h2 {
@@ -121,9 +121,10 @@
          .card {
            padding: 20px;
            border-radius: 6px;
-           background-color: #C1C72C;
-           color: black;
+           background-color: #FF8374;
+           color: white;
            margin: 20px;
+           text-align: center;
          }
          
          .col {
@@ -145,52 +146,55 @@
       </style>
       <body>
       <div class="wrapper">
-         <div class="container">
+        <div class="container">
          <div class="photo-header">
           <img src="https://avatars3.githubusercontent.com/u/53705501?v=4" alt="profile-pic">
           <h1>Hi!</h1>
           <h2>My name is Leah Barnes!</h2>
-          <h3>Currently @ Leah Barnes</h3>
+          <br>
+          <h2>Currently @ null</h2>
             <div class="links-nav">
-            <span class="nav-link"><a href="https://www.google.com/maps/place/Hickory, North Carolina>Hickory, North Carolina</a></span>
-            <span class ="nav-link"><a href="https://github.com/LJBarnes">GitHub</a></span>
-            <span class ="nav-link"><a href="https://ljbarnes.github.io/_portfolio/">Blog</a></span>
+            <span class="nav-link"><a href="https://www.google.com/maps/place/Hickory, North Carolina"><i class="fas fa-location-arrow"></i> Hickory, North Carolina</a></span>
+            <span class ="nav-link"><a href="https://github.com/LJBarnes"><i class="fab fa-github"></i> GitHub</a></span>
+            <span class ="nav-link"><a href="https://ljbarnes.github.io/_portfolio/"><i class="fas fa-rss"></i> Blog</a></span>
          </div>
-      
-      
+         </div>
+      <div class="container">
+      <main>
       <div class="row">
-        <div class="col-sm-12">
-         <h1>Front end developer utilizing past art and design experience to create dynamic websites and applications that are both visually appealing and functional.</h1>
+        <div class="col">
+         <h3>Front end developer utilizing past art and design experience to create dynamic websites and applications that are both visually appealing and functional.</h3>
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-6">
+          <div class="col">
              <div class="card">
-               <h2>Public Repositories</h2>
+               <h3>Public Repositories</h3>
                 <h5>16</h5>
              </div>
 
              <div class="card">
-              <h2>Followers</h2>
+              <h3>Followers</h3>
                 <h5>22</h5>
              </div>
 
           </div>
-        </div>
+        
 
-        <div class="row">  
-          <div class="col-sm-6">
+            <div class="col">
             <div class="card">
-              <h2>GitHub Stars</h2>
+              <h3>GitHub Stars</h3>
                <h5>0</h5>
             </div>
             <div class="card">
-              <h2>Following</h2>
+              <h3>Following</h3>
                 <h5>21</h5>
+            </div> 
             </div>
+          </main>
           </div>
         </div>
-      </div>                
+                      
       </div>
       </body>
       </html>
