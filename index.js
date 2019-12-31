@@ -18,10 +18,10 @@ inquirer
         message: "What is your favorite color?",
         name: "color",
         choices: [
-            "Green",
-            "Blue",
-            "Pink",
-            "Red",
+            "green",
+            "blue",
+            "pink",
+            "red",
         ]
     }
     ])
