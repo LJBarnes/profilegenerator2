@@ -43,7 +43,7 @@ inquirer
 
 
                 // writes HTML File
-                console.log(genHTML(username, color));
+                
                 fs.writeFile('first.html', genHTML(githubData, stars, color), function (err) {
                     console.log(genHTML);
                     if (err) throw err;

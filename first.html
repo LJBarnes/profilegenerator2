@@ -1,5 +1,4 @@
-function generateHTML(githubData) {
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
@@ -25,7 +24,7 @@ function generateHTML(githubData) {
          height: 100%;
          }
          .wrapper {
-         background-color: ${colors[data.color].wrapperBackground};
+         background-color: #E6E1C3;
          padding-top: 100px;
          }
          body {
@@ -67,8 +66,8 @@ function generateHTML(githubData) {
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
-         background-color: ${colors[data.color].headerBackground};
-         color: ${colors[data.color].headerColor};
+         background-color: #C1C72C;
+         color: black;
          padding: 10px;
          width: 95%;
          border-radius: 6px;
@@ -79,7 +78,7 @@ function generateHTML(githubData) {
          border-radius: 50%;
          object-fit: cover;
          margin-top: -75px;
-         border: 6px solid ${colors[data.color].photoBorderColor};
+         border: 6px solid #black;
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
          .photo-header h1, .photo-header h2 {
@@ -122,8 +121,8 @@ function generateHTML(githubData) {
          .card {
            padding: 20px;
            border-radius: 6px;
-           background-color: ${colors[data.color].headerBackground};
-           color: ${colors[data.color].headerColor};
+           background-color: #C1C72C;
+           color: black;
            margin: 20px;
          }
          
@@ -148,32 +147,32 @@ function generateHTML(githubData) {
       <div class="wrapper">
          <div class="container">
          <div class="photo-header">
-          <img src="${githubData.avatar_url}" alt="profile-pic">
+          <img src="https://avatars3.githubusercontent.com/u/53705501?v=4" alt="profile-pic">
           <h1>Hi!</h1>
-          <h2>My name is ${githubData.name}!</h2>
-          <h3>Currently @ ${githubData.name}</h3>
+          <h2>My name is Leah Barnes!</h2>
+          <h3>Currently @ Leah Barnes</h3>
             <div class="links-nav">
-            <span class="nav-link"><a href="https://www.google.com/maps/place/${githubData.location}>${githubData.location}</a></span>
-            <span class ="nav-link"><a href="${githubData.html_url}">GitHub</a></span>
-            <span class ="nav-link"><a href="${githubData.blog}">Blog</a></span>
+            <span class="nav-link"><a href="https://www.google.com/maps/place/Hickory, North Carolina>Hickory, North Carolina</a></span>
+            <span class ="nav-link"><a href="https://github.com/LJBarnes">GitHub</a></span>
+            <span class ="nav-link"><a href="https://ljbarnes.github.io/_portfolio/">Blog</a></span>
          </div>
       
       
       <div class="row">
         <div class="col-sm-12">
-         <h1>${githubData.bio}</h1>
+         <h1>Front end developer utilizing past art and design experience to create dynamic websites and applications that are both visually appealing and functional.</h1>
         </div>
       </div>
       <div class="row">
           <div class="col-sm-6">
              <div class="card">
                <h2>Public Repositories</h2>
-                <h5>${githubData.public_repos}</h5>
+                <h5>16</h5>
              </div>
 
              <div class="card">
               <h2>Followers</h2>
-                <h5>${githubData.followers}</h5>
+                <h5>22</h5>
              </div>
 
           </div>
@@ -183,16 +182,15 @@ function generateHTML(githubData) {
           <div class="col-sm-6">
             <div class="card">
               <h2>GitHub Stars</h2>
-               <h5>${stars}</h5>
+               <h5>0</h5>
             </div>
             <div class="card">
               <h2>Following</h2>
-                <h5>${githubData.following}</h5>
+                <h5>21</h5>
             </div>
           </div>
         </div>
       </div>                
       </div>
       </body>
-      </html>`
-}
+      </html>
